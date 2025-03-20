@@ -250,7 +250,7 @@ export default function Home() {
 															isRtl ? 'flex-row-reverse' : ''
 														}`}>
 														<span className='text-xl'>{item.symbol}</span>
-														<div>
+														<div className={isRtl ? 'font-vazirmatn' : ''}>
 															<span className='font-medium'>{item.name}</span>
 															<span className='mx-1'>-</span>
 															<span className='text-gray-600'>

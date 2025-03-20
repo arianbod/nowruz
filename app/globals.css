@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* /app/styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --font-inter: 'Inter', system-ui, -apple-system, sans-serif;
   --font-vazirmatn: 'Vazirmatn', system-ui, -apple-system, sans-serif;
@@ -27,7 +32,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.85));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
   z-index: -1;
 }
 
@@ -54,22 +59,9 @@ body::before {
   background: linear-gradient(to bottom, #d97706, #059669);
 }
 
-/* Gradient Text */
-.text-gradient {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-emerald-700 to-emerald-900;
-}
-
-.text-gradient-amber {
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-amber-600 to-red-600;
-}
-
 /* Animation classes */
 .animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.animate-float-delay {
-  animation: float 6s ease-in-out 2s infinite;
+  animation: float 3s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -77,7 +69,7 @@ body::before {
     transform: translateY(0px);
   }
   50% {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
   }
   100% {
     transform: translateY(0px);
@@ -97,72 +89,25 @@ body::before {
   }
 }
 
-/* Fortune Button with gradient */
-.fortune-button {
-  @apply text-white font-bold;
-  background: linear-gradient(135deg, #ef4444, #f59e0b, #ef4444);
-  background-size: 200% 200%;
-  animation: shimmer 3s ease-in-out infinite;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-.fortune-button:hover {
-  background-size: 150% 150%;
-  box-shadow: 0 0 15px rgba(239, 68, 68, 0.5);
-}
-
-@keyframes shimmer {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-/* Nowruz pattern */
-.nowruz-pattern {
+/* Decorative elements */
+.decorative-border {
   position: relative;
-  overflow: hidden;
 }
 
-.nowruz-pattern::before {
-  content: "";
+.decorative-border::before {
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f59e0b' fill-opacity='0.07'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  opacity: 0.5;
-  z-index: -1;
+  height: 6px;
+  background: linear-gradient(to right, #10b981, #f59e0b, #ef4444, #f59e0b, #10b981);
+  border-radius: 3px 3px 0 0;
 }
 
-/* Responsive typography */
-@media (max-width: 640px) {
-  h1 {
-    font-size: 1.75rem;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-  p {
-    font-size: 0.95rem;
-  }
-}
-
-/* Card hover effects */
-.card-hover {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-hover:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+.nowruz-pattern {
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f59e0b' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* Focus styles for accessibility */
@@ -171,9 +116,42 @@ body::before {
   outline-offset: 2px;
 }
 
+/* Envelope Effect */
+.envelope {
+  perspective: 1000px;
+}
+
+.envelope-front {
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.envelope-back {
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+}
+
+.envelope.open .envelope-front {
+  transform: rotateY(180deg);
+}
+
+.envelope.open .envelope-back {
+  transform: rotateY(0deg);
+}
+
 /* Custom utilities */
 @layer utilities {
   .text-shadow {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #10b981, #f59e0b);
   }
 }

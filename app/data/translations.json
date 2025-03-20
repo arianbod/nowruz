@@ -1,0 +1,122 @@
+{
+	"en": {
+		"app": {
+			"title": "Nowruz Fortune",
+			"subtitle": "Experience the wisdom of Hafez on Persian New Year"
+		},
+		"home": {
+			"welcome": "Welcome to Nowruz Fortune Telling",
+			"intro": "Nowruz (Persian New Year) is an ancient celebration marking the arrival of spring. One of its beautiful traditions is seeking guidance through the poetry of Hafez, the renowned 14th-century Persian poet.",
+			"instructions": "Click the button below to receive your Nowruz fortune from Hafez",
+			"button": "Get Your Fortune",
+			"about": "About Nowruz",
+			"hafez": "About Hafez",
+			"year": "Persian Year 2583",
+			"info": "Nowruz (which means \"New Day\") marks the first day of spring and is celebrated on the day of the vernal equinox. It is a time for renewal, joy, and hope. Traditions include setting a special table called Haft-Sin with seven symbolic items, visiting family, and enjoying special foods."
+		},
+		"fortune": {
+			"title": "Your Nowruz Fortune",
+			"loading": "Consulting the wisdom of Hafez...",
+			"interpretation": "Interpretation",
+			"new": "Get Another Fortune",
+			"home": "Return Home",
+			"languages": "Read in:"
+		},
+		"languages": {
+			"en": "English",
+			"fa": "فارسی",
+			"ru": "Русский",
+			"tr": "Türkçe"
+		}
+	},
+	"fa": {
+		"app": {
+			"title": "فال نوروزی",
+			"subtitle": "تجربه حکمت حافظ در نوروز ایرانی"
+		},
+		"home": {
+			"welcome": "به فال‌گیری نوروزی خوش آمدید",
+			"intro": "نوروز (سال نو ایرانی) جشنی باستانی است که ورود بهار را گرامی می‌دارد. یکی از سنت‌های زیبای آن، جستجوی راهنمایی از طریق اشعار حافظ، شاعر برجسته ایرانی قرن هشتم هجری است.",
+			"instructions": "برای دریافت فال نوروزی خود از حافظ، روی دکمه زیر کلیک کنید",
+			"button": "فال بگیرید",
+			"about": "درباره نوروز",
+			"hafez": "درباره حافظ",
+			"year": "سال ۲۵۸۳ ایرانی",
+			"info": "نوروز (به معنای «روز نو») نشان‌دهنده اولین روز بهار است و در روز اعتدال بهاری جشن گرفته می‌شود. این زمان تجدید، شادی و امید است. سنت‌ها شامل چیدن سفره خاصی به نام هفت‌سین با هفت قلم نمادین، دید و بازدید خانوادگی و لذت بردن از غذاهای ویژه است."
+		},
+		"fortune": {
+			"title": "فال نوروزی شما",
+			"loading": "در حال مشورت با حکمت حافظ...",
+			"interpretation": "تعبیر",
+			"new": "فال جدید بگیرید",
+			"home": "بازگشت به خانه",
+			"languages": "خواندن به:"
+		},
+		"languages": {
+			"en": "English",
+			"fa": "فارسی",
+			"ru": "Русский",
+			"tr": "Türkçe"
+		}
+	},
+	"ru": {
+		"app": {
+			"title": "Гадание Навруза",
+			"subtitle": "Познайте мудрость Хафиза в персидский Новый год"
+		},
+		"home": {
+			"welcome": "Добро пожаловать в гадание Навруза",
+			"intro": "Навруз (персидский Новый год) - древний праздник, отмечающий приход весны. Одна из его прекрасных традиций - обращение за советом к поэзии Хафиза, известного персидского поэта 14-го века.",
+			"instructions": "Нажмите кнопку ниже, чтобы получить ваше предсказание Навруза от Хафиза",
+			"button": "Получить предсказание",
+			"about": "О Наврузе",
+			"hafez": "О Хафизе",
+			"year": "Персидский год 2583",
+			"info": "Навруз (что означает \"Новый день\") знаменует первый день весны и отмечается в день весеннего равноденствия. Это время обновления, радости и надежды. Традиции включают установку специального стола под названием Хафт-Син с семью символическими предметами, посещение семьи и наслаждение особыми блюдами."
+		},
+		"fortune": {
+			"title": "Ваше предсказание Навруза",
+			"loading": "Обращаемся к мудрости Хафиза...",
+			"interpretation": "Толкование",
+			"new": "Получить другое предсказание",
+			"home": "Вернуться на главную",
+			"languages": "Читать на:"
+		},
+		"languages": {
+			"en": "English",
+			"fa": "فارسی",
+			"ru": "Русский",
+			"tr": "Türkçe"
+		}
+	},
+	"tr": {
+		"app": {
+			"title": "Nevruz Falı",
+			"subtitle": "Fars Yeni Yılında Hafız'ın bilgeliğini deneyimleyin"
+		},
+		"home": {
+			"welcome": "Nevruz Fal Bakımına Hoş Geldiniz",
+			"intro": "Nevruz (Fars Yeni Yılı), baharın gelişini işaretleyen kadim bir kutlamadır. Güzel geleneklerinden biri, 14. yüzyılın ünlü Fars şairi Hafız'ın şiirleri aracılığıyla rehberlik aramaktır.",
+			"instructions": "Hafız'dan Nevruz falınızı almak için aşağıdaki düğmeye tıklayın",
+			"button": "Falınızı Alın",
+			"about": "Nevruz Hakkında",
+			"hafez": "Hafız Hakkında",
+			"year": "Fars Yılı 2583",
+			"info": "Nevruz (\"Yeni Gün\" anlamına gelir) ilkbaharın ilk gününü işaret eder ve ilkbahar ekinoksu gününde kutlanır. Bu, yenilenme, neşe ve umut zamanıdır. Gelenekler arasında yedi sembolik öğe içeren Haft-Sin adlı özel bir masa kurmak, aileyi ziyaret etmek ve özel yemeklerin tadını çıkarmak yer alır."
+		},
+		"fortune": {
+			"title": "Nevruz Falınız",
+			"loading": "Hafız'ın bilgeliğine danışılıyor...",
+			"interpretation": "Yorum",
+			"new": "Başka Bir Fal Alın",
+			"home": "Ana Sayfaya Dön",
+			"languages": "Şu dilde oku:"
+		},
+		"languages": {
+			"en": "English",
+			"fa": "فارسی",
+			"ru": "Русский",
+			"tr": "Türkçe"
+		}
+	}
+}
